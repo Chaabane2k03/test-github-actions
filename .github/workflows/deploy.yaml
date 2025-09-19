@@ -1,0 +1,12 @@
+name: deployment Exercise
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Getting the repo from the GitHub
+      uses: actions/checkout@v3
+      -name: Deploying the code
+      run: echo "Deploying the code to the server"
+      -name: Notify the deployment
+      run: echo "Deployment is successful"
