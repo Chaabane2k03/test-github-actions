@@ -11,4 +11,4 @@ jobs:
         run: npm install
 
       - name: Run deployment script
-        run: npm run deploy
+        run: echo "npm run deploy"
